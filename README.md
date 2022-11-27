@@ -1,4 +1,4 @@
-# Resort_web.github.io
+# Resort Website
 
 ## Resort Management System
 
