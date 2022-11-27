@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.101.0">
+  <title>Resort | Login</title>
+  <link rel="stylesheet" href="login.css">
+  <!-- Favicon -->
+  <link rel="icon" href="/images/logo.png" type="image/gif" />
+  <!-- Bootstrap CSS CDN Link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/bc6718bfb0.js" crossorigin="anonymous"></script>
+  <!-- External Bootstrap file -->
+  <link href="/bootstrap-5.2.1-dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="text-center">
+  <main class="form-signin w-100 m-auto">
+    <form action="register.php" method="post">
+      <img class="mb-4" src="Dark-logo.png" alt="logo" width="72" height="75">
+      <h1 class="h3 mb-4 fw-semibold">Please Sign in</h1>
+
+      <div class="form-floating">
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" autocomplete="off"
+          required>
+        <label for="floatingInput">Email address</label>
+      </div>
+      <div class="form-floating">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password" autocomplete="off"
+          required>
+        <label for="floatingPassword">Password</label>
+      </div>
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me" required> Remember me
+        </label>
+      </div>
+      <button class="w-100 my-2 btn btn-primary" type="submit">Login</button>
+      <a class="btn  btn-primary w-100 my-2" type="submit" href="register.html" role="button">Not yet a member?
+        Signup now</a>
+    </form>
+  </main>
+</body>
+
+</html>
