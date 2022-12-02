@@ -350,8 +350,9 @@
                         <p class="card-text">Our uniquely designed conference room is filled with natural light and
                             equipped with the latest technology to guarantee seamless presentations and effective
                             conferences.</p>
-                        <a href="enquire.html"><button type="button" class="btn btn-outline-primary">Enquire
-                                Now</button></a>
+                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                            data-bs-target="#enquiryModal">Enquire
+                            Now</button>
                     </div>
                 </div>
                 <div class="card text-bg-light mb-3" style="width: 18rem;">
@@ -361,8 +362,9 @@
                         <p class="card-text">From birthdays and baby showers to engagements and anniversaries, our
                             dedicated team will take care of every detail and help bring your unique vision to life.
                         </p>
-                        <a href="enquire.html"><button type="button" class="btn btn-outline-primary">Enquire
-                                Now</button></a>
+                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                            data-bs-target="#enquiryModal">Enquire
+                            Now</button>
                     </div>
                 </div>
                 <div class="card text-bg-light mb-3" style="width: 18rem;">
@@ -373,8 +375,49 @@
                             exuberance. We are here to take care of the fine details to make your special day
                             perfect
                             and unforgettable.</p>
-                        <a href="enquire.html"><button type="button" class="btn btn-outline-primary">Enquire
-                                Now</button></a>
+                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                            data-bs-target="#enquiryModal">Enquire
+                            Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="enquiry">
+        <div class="modal fade" id="enquiryModal" tabindex="-1" aria-labelledby="enquiryModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="enquiryModalLabel">Enquiey Now</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="py-5">
+                            <form target="_blank" action="https://formsubmit.co/darshangaikwad4114@gmail.com"
+                                method="POST">
+                                <div class="form-group">
+                                    <div class="form-row">
+                                        <div class="col mb-3">
+                                            <input type="text" name="name" class="form-control" placeholder="Full Name"
+                                                required>
+                                        </div>
+                                        <div class="col mb-3">
+                                            <input type="email" name="email" class="form-control"
+                                                placeholder="Email Address" required>
+                                        </div>
+                                        <div class="col mb-3">
+                                            <input type="tel" name="Subject" class="form-control"
+                                                placeholder="Mobile No" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <textarea placeholder="Write Here..." class="form-control" name="message" rows="6"
+                                        required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-lg btn-dark w-100 mb-4 mt-2">Submit</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -582,9 +625,9 @@
                             <h5>Subscribe to our newsletter</h5>
                             <p>Monthly digest of what's new and exciting from us.</p>
                             <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                                <label for="newsletter1" name="email" class="visually-hidden ">Email address</label>
+                                <label for="newsletter1" name="email" class="visually-hidden">Email address</label>
                                 <input id="newsletter1" type="email" name="New Subscriber for News" class="form-control"
-                                    placeholder="Email address">
+                                    placeholder="Email address" required>
                                 <button class="btn btn-primary" type="submit" autocomplete="off">Subscribe</button>
                             </div>
                         </form>
