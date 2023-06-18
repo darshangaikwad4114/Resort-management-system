@@ -1,0 +1,15 @@
+{
+  "name": "resort-management-system",
+  "version": "1.0.0",
+  "description": "resort management system project",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Darshan Gaikwad",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.0"
+  }
+}

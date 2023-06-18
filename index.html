@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sirizot | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="logo.png" type="image/gif" />
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+    <header id="home">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a href="index.html" class="m-2">
+                    <img src="./images/logo.png" alt="logo" class="logo fs-1">
+                    <a class="navbar-brand fs-3 px-1 " href="index.html">Resort</a></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link active px-4" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-4" href="#testimoinal">Testimoinal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-4" href="#event">Event</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-4" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-4" href="#contact">Contact</a>
+                        </li>
+
+                    </ul>
+                    <div class="text-end me-2">
+                        <button type="button" class="btn btn-outline-success" data-bs-toggle="modal"
+                            data-bs-target="#loginModal">Login</button>
+                        <button class="btn btn-outline-success" type="submit" data-bs-toggle="modal"
+                            data-bs-target="#registerModal">Register</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="photo">
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/Resort_img1.jpg" class="bd-placeholder-img" width="100%" height="100%"
+                        alt="image" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    </img>
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1>LUXURY RESORT</h1>
+                            <p><a class="btn btn-lg btn-primary" href="#book">Book Now</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/Resort_img2.png" class="bd-placeholder-img" width="100%" height="100%"
+                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    </img>
+
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>GARDEN VILLA RESORT</h1>
+                            <p><a class="btn btn-lg btn-primary" href="#pricing">Rooms pricing</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/Resort_img3.png" class="bd-placeholder-img" width="100%" height="100%"
+                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    </img>
+                    <div class="container">
+                        <div class="carousel-caption text-end">
+                            <h1>CAMP DELLA RESORT</h1>
+                            <p><a class="btn btn-lg btn-primary" href="#room">Browse Rooms</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <section id="book">
+        <div class="container rounded shadow my-5 p-5">
+            <form action="">
+                <h2 class="display-5 fw-bolder text-center">Book Now</h2>
+                <p class="lead mb-4 fw-normal text-center">Rest Journey in Single step, in the breathtaking</p>
+                <p class="text-center">
+                    <marquee class="text-danger text-bg-light" width="50%">Hurry up, hurry up, the Winter Special is
+                        here! Reserve your weekends here and spend them with your family and friends.</marquee>
+                </p>
+                <div class="row col-md-6 col-12 my-4 mx-sm-auto">
+                    <label for="exampleDataList" class="form-label">Location</label>
+                    <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Search...">
+                    <datalist id="datalistOptions">
+                        <option value="Goa">
+                        <option value="Lonavala">
+                        <option value="Mumbai">
+                        <option value="Alibag">
+                    </datalist>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-12 mb-4">
+                        <div class="form-control d-flex flex-column">
+                            <p class="h-blue">Check In Date*</p> <input class="inputbox text-dark " type="date">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 mb-4">
+                        <div class="form-control d-flex flex-column">
+                            <p class="h-blue">Check out Date*</p> <input class="inputbox text-dark " type="date">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="form-control d-flex flex-column">
+                            <p class="h-blue">ADULTS(18+)</p> <select class="border-0 outline-none">
+                                <option value="" hidden selected>0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="form-control d-flex flex-column">
+                            <p class="h-blue">CHILDREN(0-17)</p> <select class="border-0 outline-none">
+                                <option value="" hidden selected>0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="form-control d-flex flex-column">
+                            <p class="h-blue">TRAVEL CLASS</p> <select class="border-0 outline-none">
+                                <option value="" hidden selected>Class</option>
+                                <option value="1">Family</option>
+                                <option value="2">Business</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn btn-primary form-control text-center mb-4">Search</div>
+            </form>
+        </div>
+    </section>
+    <section id="room">
+        <div class="container-fluid px-4 py-5 bg-light" id="custom-cards">
+            <h2 class="display-5 fw-bolder text-center">Rooms</h2>
+            <p class="lead mb-4 fw-normal text-center text-muted">The concept and service of the best luxury hotels in
+                Sirizot in
+                our sophisticated.</p>
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                <div class="col">
+                    <div class="pop-card card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg container-fluid "
+                        style="background-image: url('./images/Room_1.jpg');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="pop-card card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                        style="background-image: url('./images/Room_2.jpg');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="pop-card card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                        style="background-image: url('./images/Room_3.jpg');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="pop-card card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                        style="background-image: url('./images/Room_4.jpg');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="pop-card card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                        style="background-image: url('./images/Room_5.jpg');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="pop-card card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                        style="background-image: url('./images/Room_6.jpg');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="pricing">
+        <h1 class="display-5 fw-bolder text-center">Rooms Pricing</h1>
+        <div class="row row-cols-1 row-cols-md-3 mb-3 py-5 text-center justify-content-center">
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">Normal</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">3,500&#8377;<small
+                                class="text-muted fw-light">/night</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Breakfast included</li>
+                            <li>Air conditioning</li>
+                            <li>Free Wi-fi</li>
+                            <li>Local Pool</li>
+                        </ul>
+                        <a href="#book"><button type="button" class="w-100 btn btn-lg btn-outline-primary">BOOK
+                                NOW</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">VIP</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">7,000&#8377;<small
+                                class="text-muted fw-light">/night</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Breakfast and lunch included</li>
+                            <li>Air conditioning</li>
+                            <li>Free Wi-fi</li>
+                            <li>Private Pool</li>
+                        </ul>
+                        <a href="#book"><button type="button" class="w-100 btn btn-lg btn-outline-primary">BOOK
+                                NOW</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="adventurePark">
+        <div class="px-4 py-5 my-5 text-center bg-light">
+            <h1 class="display-5 fw-bolder">Adventure Park </h1>
+            <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4 fw-normal text-center">India’s first extreme adventure park, Della Adventure Park
+                    offers guests
+                    a unique mix of organized, adrenaline-inducing adventure activities, and five-star luxury amenities
+                    - a combination that is seldom seen.</p>
+            </div>
+            <div class="container col-xxl-10 px-4 py-5">
+                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                    <div class="col-10 col-sm-8 col-lg-6">
+                        <img src="adventure_park.jpg" class="d-block mx-lg-auto img-fluid shadow-lg rounded-4"
+                            alt="image" loading="lazy">
+                    </div>
+                    <div class="col-lg-6">
+                        <p class="lead fw-semibold">Adventure Park is India's largest Extreme Adventure park with
+                            50 plus adventure activities. Experience India's only Swoop swing(100 ft.), India's Longest
+                            Flying Fox(1250ft.), 5 kinds of zorbing and 700cc yamaha raptor ATV only at Della Adventure,
+                            Lonavala.</p>
+                        <div class="d-grid gap-2 d-md-flex justify-content-center">
+                            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Explore</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container col-xxl-10 px-4 py-5">
+                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                    <div class="col-lg-6">
+                        <p class="lead fw-semibold">Run by a corporate entity, Della Adventure Park offers worry-free
+                            access to the thrills of an adventure park, by ensuring utmost safety thanks to
+                            state-of-the-art rides, adventure sports and every kid-friendly activity imaginable. Options
+                            range from a 100-foot Swoop Swing; to Sky Cycling; Paintball; Bubble Soccer; Archery; and
+                            much more. Indoor activities, water sports and even a petting zoo are all part of the
+                            excitement at Della Extreme Adventure.</p>
+                        <div class="d-grid gap-2 d-md-flex justify-content-center">
+                            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Explore</button>
+                        </div>
+                    </div>
+                    <div class="col-10 col-sm-8 col-lg-6">
+                        <img src="adventure_park2.jpg" class="d-block mx-lg-auto img-fluid shadow-lg rounded-4"
+                            alt="image" width="700" height="500" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="event">
+        <div class="px-4 mb-5 py-5 my-5 text-center">
+            <h1 class="display-5 fw-bolder">Events</h1>
+            <div class="col-lg-6 mx-auto ">
+                <p class="lead fw-normal mb-4">Be it a conference or board meeting or the celebration of a
+                    milestone
+                    with your
+                    closest friends and family, make your event a distinctive experience at Rosetta by Ferns. Invite
+                    your guests to experience world-class cuisine paired with signature Rosetta service at our
+                    unique
+                    venues.</p>
+            </div>
+            <div class="d-flex justify-content-evenly py-5">
+                <div class="shadow card text-bg-light mb-3" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-info">Conferences</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">The ideal ambience for impactful meetings</h6>
+                        <p class="card-text">Our uniquely designed conference room is filled with natural light and
+                            equipped with the latest technology to guarantee seamless presentations and effective
+                            conferences.</p>
+                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                            data-bs-target="#enquiryModal">Enquire
+                            Now</button>
+                    </div>
+                </div>
+                <div class="shadow card text-bg-light mb-3" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-info">Personal Gatherings</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Personalized, unforgettable events</h6>
+                        <p class="card-text">From birthdays and baby showers to engagements and anniversaries, our
+                            dedicated team will take care of every detail and help bring your unique vision to life.
+                        </p>
+                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                            data-bs-target="#enquiryModal">Enquire
+                            Now</button>
+                    </div>
+                </div>
+                <div class="shadow card text-bg-light mb-3" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-info">Weddings</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">The ultimate luxury wedding destination</h6>
+                        <p class="card-text">Affirm your life's love in the perfect setting amidst the green rustic
+                            exuberance. We are here to take care of the fine details to make your special day
+                            perfect
+                            and unforgettable.</p>
+                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                            data-bs-target="#enquiryModal">Enquire
+                            Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="enquiry">
+        <div class="modal fade" id="enquiryModal" tabindex="-1" aria-labelledby="enquiryModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="enquiryModalLabel">Enquiey Now</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="py-5">
+                            <form target="_blank" action="https://formsubmit.co/darshangaikwad4114@gmail.com"
+                                method="POST">
+                                <div class="form-group">
+                                    <div class="form-row">
+                                        <div class="col mb-3">
+                                            <input type="text" name="name" class="form-control" placeholder="Full Name"
+                                                required>
+                                        </div>
+                                        <div class="col mb-3">
+                                            <input type="email" name="email" class="form-control"
+                                                placeholder="Email Address" required>
+                                        </div>
+                                        <div class="col mb-3">
+                                            <input type="tel" name="Subject" class="form-control"
+                                                placeholder="Mobile No" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <textarea placeholder="Write Here..." class="form-control" name="message" rows="6"
+                                        required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-lg btn-dark w-100 mb-4 mt-2">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="testimonial">
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <h1 class="display-5 fw-bolder text-center py-5">Testimonial</h1>
+                <div class="justify-content-evenly row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="profile-img1.jpg" class="bd-placeholder-img card-img-top img-fluid" width="100%"
+                                height="225" role="img">
+                            <title>Placeholder</title>
+                            </img>
+                            <div class="card-body">
+                                <p class="card-text">" We feel very lucky having booked our honeymoon holidays to
+                                    maldives
+                                    with 360 degree world. They had the patience and time to listen to our needs and
+                                    accordingly altered/customised the package. Very quick communication- they respond
+                                    very quickly at anytime . They altered my our full boArd to all inclusive at 4 in
+                                    the morning, when I was at the airport. Transparency/trust - communication is very
+                                    honest,all the details as what to expect were all communicated to us honestly. "</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">- Rajdeep Dhondugade</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="profile-img2.jpg" class="bd-placeholder-img card-img-top img-fluid" width="100%"
+                                height="225" role="img">
+                            <title>Placeholder</title>
+                            </img>
+                            <div class="card-body">
+                                <p class="card-text">" We feel very lucky having booked our honeymoon holidays to
+                                    maldives
+                                    with 360 degree world. They had the patience and time to listen to our needs and
+                                    accordingly altered/customised the package. Very quick communication- they respond
+                                    very quickly at anytime . They altered my our full boArd to all inclusive at 4 in
+                                    the morning, when I was at the airport. Transparency/trust - communication is very
+                                    honest,all the details as what to expect were all communicated to us honestly. "</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">- Shrinivas Hatte</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="profile-img3.jpg" class="bd-placeholder-img card-img-top img-fluid" width="100%"
+                                height="225" role="img">
+                            <title>Placeholder</title>
+                            </img>
+                            <div class="card-body">
+                                <p class="card-text">" We feel very lucky having booked our honeymoon holidays to
+                                    maldives
+                                    with 360 degree world. They had the patience and time to listen to our needs and
+                                    accordingly altered/customised the package. Very quick communication- they respond
+                                    very quickly at anytime . They altered my our full boArd to all inclusive at 4 in
+                                    the morning, when I was at the airport. Transparency/trust - communication is very
+                                    honest,all the details as what to expect were all communicated to us honestly. "</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">- Darshan Gaikwad</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="px-4 py-3 my-3 text-center">
+            <h1 class="display-5 fw-bolder">About us</h1>
+            <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4 fw-normal text-center">Luxury Hotel
+                    Experience luxury in Budget at our
+                    well-equipped hotel in Lonavala</p>
+            </div>
+            <div class="container col-xxl-10 px-4 py-5">
+                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                    <div class="col-10 col-sm-8 col-lg-6">
+                        <img src="adventure_park.jpg" class="d-block mx-lg-auto img-fluid shadow-lg rounded-4"
+                            alt="image" width="700" height="500" loading="lazy">
+                    </div>
+                    <div class="col-lg-6">
+                        <!-- <h1 class="display-5 fw-bold lh-1 mb-3">Grand Ballroom</h1> -->
+                        <p class="lead fw-semibold">Adventure Park is India's largest Extreme Adventure park with
+                            50 plus adventure activities. Experience India's only Swoop swing(100 ft.), India's Longest
+                            Flying Fox(1250ft.), 5 kinds of zorbing and 700cc yamaha raptor ATV only at Della Adventure,
+                            Lonavala.</p>
+                        <div class="d-grid gap-2 d-md-flex justify-content-center">
+                            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Explore</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container col-xxl-10 px-4 py-5">
+                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                    <div class="col-lg-6">
+                        <p class="lead fw-semibold">Run by a corporate entity, Della Adventure Park offers worry-free
+                            access to the thrills of an adventure park, by ensuring utmost safety thanks to
+                            state-of-the-art rides, adventure sports and every kid-friendly activity imaginable. Options
+                            range from a 100-foot Swoop Swing; to Sky Cycling; Paintball; Bubble Soccer; Archery; and
+                            much more. Indoor activities, water sports and even a petting zoo are all part of the
+                            excitement at Della Extreme Adventure.</p>
+                        <div class="d-grid gap-2 d-md-flex justify-content-center">
+                            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Explore</button>
+                        </div>
+                    </div>
+                    <div class="col-10 col-sm-8 col-lg-6">
+                        <img src="adventure_park2.jpg" class="d-block mx-lg-auto img-fluid shadow-lg rounded-4"
+                            alt="image" width="700" height="500" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="venue">
+        <div class="px-4 py-5 my-5 text-center bg-light">
+            <h1 class="display-5 fw-bold">Venue</h1>
+            <div class="container col-xxl-10 px-4 py-5">
+                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                    <div class="col-10 col-sm-8 col-lg-6">
+                        <img src="Ball-room-event.jpg" class="d-block mx-lg-auto img-fluid shadow-lg rounded-4"
+                            alt="image" width="700" height="500" loading="lazy">
+                    </div>
+                    <div class="col-lg-6">
+                        <h1 class="display-5 fw-bold lh-1 mb-3">Grand Ballroom</h1>
+                        <p class="lead fw-semibold">A 5000 sq. ft. venue for grand events, the Grand Ballroom has an
+                            additional
+                            space of 4000 sq. ft. as a pre-function area to serve food and beverages.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container col-xxl-10 px-4 py-5">
+                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                    <div class="col-lg-6">
+                        <h1 class="display-5 fw-bold lh-1 mb-3">Banquet Lawns</h1>
+                        <p class="lead fw-semibold">The space can also go perfect for your intimate parties & events in
+                            Lonavala, let us be your host and our notch services will surely make you leave as our
+                            ambassadors.</p>
+                    </div>
+                    <div class="col-10 col-sm-8 col-lg-6">
+                        <img src="Banquet Lawns.jpeg" class="d-block mx-lg-auto img-fluid shadow-lg rounded-4"
+                            alt="image" width="700" height="500" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="faq">
+        <div class="container py-5 my-5">
+            <h1 class="display-5 text-center fw-bold">Frequently Asked Question</h1>
+            <div class="accordion py-5" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            1 .What are the check-in and check-out times at the resort?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Check-in is typically at 3:00 PM and check-out is typically at 11:00 AM, but this can vary
+                            depending on the resort. It's best to confirm the specific check-in and check-out times with
+                            the resort when making your reservation.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            2. Is there a dress code at the resort's restaurants and bars?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            This can vary depending on the resort, some have a casual dress code while others may have a
+                            more formal dress code. It's best to check with the resort or the specific restaurant or bar
+                            to confirm their dress code.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            3. Are there any all-inclusive packages available?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Many resorts offer all-inclusive packages that include meals, drinks, and activities in the
+                            price. Check with the resort to see if they offer any all-inclusive options and what is
+                            included in them.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="bg-light">
+        <div class="container py-2 row justify-content-between">
+            <h1 class="display-5 fw-bold text-center p-5">Contact us</h1>
+            <div class="col-sm-2 w-50">
+                <form target="_blank" action="https://formsubmit.co/darshangaikwad4114@gmail.com" method="POST">
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="col mb-3">
+                                <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                            </div>
+                            <div class="col mb-3">
+                                <input type="email" name="email" class="form-control" placeholder="Email Address"
+                                    required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" class="form-control" name="message" rows="6"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-lg btn-dark w-100 mb-4 mt-2">Submit Form</button>
+                </form>
+            </div>
+            <div class="col-sm-2 w-50">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18965.525264030803!2d73.86379104260092!3d18.436596853835766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2ead11580b869%3A0xe51efd4c73957086!2zMTjCsDI2JzM5LjMiTiA3M8KwNTAnNTguMSJF!5e0!3m2!1sen!2sin!4v1674929172403!5m2!1sen!2sin"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    <footer id="footer" class="bg-dark text-secondary">
+        <div class="container">
+            <footer class="py-5">
+                <div class="row">
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Menu</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#home" class="nav-link p-0 text-muted">Home</a></li>
+                            <li class="nav-item mb-2"><a href="#testimonial"
+                                    class="nav-link p-0 text-muted">Testimonial</a></li>
+                            <li class="nav-item mb-2"><a href="#room" class="nav-link p-0 text-muted">Rooms</a></li>
+                            <li class="nav-item mb-2"><a href="#venue" class="nav-link p-0 text-muted">Venue</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Services</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Gallery</a></li <li
+                                class="nav-item mb-2"><a href="#pricing" class="nav-link p-0 text-muted">Pricing</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#faq" class="nav-link p-0 text-muted">FAQs</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">PRIVACY & POLICY</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5 offset-md-1 mb-3">
+                        <form target="_blank" action="https://formsubmit.co/darshangaikwad4114@gmail.com" method="POST">
+                            <h5>Subscribe to our newsletter</h5>
+                            <p>Monthly digest of what's new and exciting from us.</p>
+                            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                <label for="newsletter1" name="email" class="visually-hidden">Email address</label>
+                                <input id="newsletter1" type="email" name="New Subscriber for News" class="form-control"
+                                    placeholder="Email address" required>
+                                <button class="btn btn-primary" type="submit" autocomplete="off">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                    <!-- <p>&copy; 2022 Company, Inc. All rights reserved.</p> -->
+                    <p>Created by &copy; Darshan Gaikwad</p>
+                    <ul class="list-unstyled d-flex">
+                        <a class="text-secondary" href="#">
+                            <li class="ms-3 bi bi-twitter fs-3"></li>
+                        </a>
+                        <a class="text-secondary" href="#">
+                            <li class="ms-3 bi bi-facebook fs-3"></li>
+                        </a>
+                        <a class="text-secondary" href="#">
+                            <li class="ms-3 bi bi-instagram fs-3"></li>
+                        </a>
+                        <a class="text-secondary" href="#">
+                            <li class="ms-3 bi bi-youtube fs-3"></li>
+                        </a>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </footer>
+    <section>
+        <!-- Login Form -->
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content rounded-4 shadow">
+                    <div class="modal-header p-5 pb-4 border-bottom-0">
+                        <h1 class="fw-bold mb-0 fs-2">Sign in</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-5 pt-0">
+                        <form class="" autocomplete="off">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control rounded-3" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Username / Email</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control rounded-3" id="floatingPassword"
+                                    placeholder="Password">
+                                <label for="floatingPassword">Password</label>
+                            </div>
+                            <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary m-auto" type="submit">Sign
+                                in</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Registration Form -->
+        <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content rounded-4 shadow">
+                    <div class="modal-header p-5 pb-4 border-bottom-0">
+                        <h1 class="fw-bold mb-0 fs-2">Sign up for free</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-5 pt-0">
+                        <form class="" autocomplete="off">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control rounded-3" id="floatingInput"
+                                    placeholder="Full Name">
+                                <label for="floatingInput">Username</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="number" class="form-control rounded-3" id="floatingInput"
+                                    placeholder="Mobile No">
+                                <label for="floatingInput">Mobile No</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control rounded-3" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Email address</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control rounded-3" id="floatingPassword"
+                                    placeholder="Password">
+                                <label for="floatingPassword">Password</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control rounded-3" id="floatingInput"
+                                    placeholder="Confirm Password">
+                                <label for="floatingInput">Confirm Password</label>
+                            </div>
+                            <small class="text-dark">By clicking Sign up, you agree to the terms of use.</small>
+                            <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary m-auto" type="submit">Sign
+                                up</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    </script>
+    <!-- Bootstrap External File -->
+    <script src="/bootstrap-5.2.1-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript CDN Link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
