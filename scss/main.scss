@@ -1,0 +1,25 @@
+$primary: #3e5bff;
+// $danger: #4b50e6;
+// $dark: #2c2d32;
+// $warning: #fbc531;
+
+// $theme-colors: (
+//   "primary": $primary,
+//   "danger": $danger,
+//   "dark": $dark,
+//   "warning": $warning,
+// );
+
+// Create your own map
+// $custom-colors: (
+//   bg-body:#dff9fb,
+
+// );
+
+// Merge the maps
+// $theme-colors: map-merge($theme-colors, $custom-colors);
+
+// import bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
