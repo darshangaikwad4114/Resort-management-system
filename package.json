@@ -5,8 +5,7 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "buildIcon": "purgecss --css ./css/icon.css --content ./index.html --output ./css/icon.css",
-    "build": "purgecss --css ./css/main.css ./css/icon.css --content ./index.html --output ./css/main.css ./css/icon.css",
+    "build": "purgecss --css ./css/main.css --content ./index.html --output ./css/main.css"
   },
   "keywords": [],
   "author": "Darshan Gaikwad",
