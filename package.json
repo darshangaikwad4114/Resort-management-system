@@ -11,8 +11,7 @@
   "author": "Darshan Gaikwad",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^5.3.1",
-    "bootstrap-icons": "^1.10.5"
+    "bootstrap": "^5.3.1"
   },
   "devDependencies": {
     "purgecss": "^5.0.0"
