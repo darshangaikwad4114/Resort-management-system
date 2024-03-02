@@ -1,17 +1,16 @@
 {
   "name": "resort-management-system",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "resort management system project",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "purgecss --css ./css/main.css --content ./index.html --output ./css/main.css"
   },
   "keywords": [],
   "author": "Darshan Gaikwad",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^5.3.1"
+    "bootstrap": "^5.3.3"
   },
   "devDependencies": {
     "purgecss": "^5.0.0"
