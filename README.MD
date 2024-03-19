@@ -1,14 +1,37 @@
 <div align="center">
 
-![Forks](https://img.shields.io/github/forks/darshangaikwad4114/Resort-management-system?logo=GITHUB&style=for-the-badge)
-[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-blue.svg?style=for-the-badge)](https://github.com/darshangaikwad4114/Resort-management-system)
-[![Stargazers](https://img.shields.io/github/stars/darshangaikwad4114/Resort-management-system?logo=github&style=for-the-badge)](https://github.com/darshangaikwad4114/Resort-management-system/stargazers)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/darshan-gaikwad/)
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/darshan_4114_)
-
 # Resort Management System✨
 
 ## ✨ [Live Preview](https://darshan-Resort-management-system.netlify.app/)
+
+<div align='center'>
+<h3>Home Section</h3>
+<img src='./images/home.png'/>
+<h3>Booking Section</h3>
+<img src='./images/booking.png'/>
+<h3>Rooms Section</h3>
+<img src='./images/rooms.png'/>
+<h3>Rooms Pricing Section</h3>
+<img src='./images/rooms-pricing.png'/>
+<h3>Events Section</h3>
+<img src='./images/events.png'/>
+<h3>testmonial Section</h3>
+<img src='./images/testmonial.png'/>
+<h3>About Section</h3>
+<img src='./images/about.png'/>
+<h3>Venue Section</h3>
+<img src='./images/venue.png'/>
+<h3>FAQ Section</h3>
+<img src='./images/faq.png'/>
+<h3>Contact Section</h3>
+<img src='./images/contact.png'/>
+<h3>sign in Section</h3>
+<img src='./images/sign-in.png'/>
+<h3>sign-up Section</h3>
+<img src='./images/sign-up.png'/>
+<h3>enquiry Section</h3>
+<img src='./images/enquiry.png'/>
+</div>
 
 # ⚡Tech Used
 
